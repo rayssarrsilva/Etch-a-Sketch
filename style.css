@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 .div-container {
@@ -9,4 +9,10 @@
     background-color: rgb(110, 108, 108);
     width: 960px;
     height: 960px;
+}
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
