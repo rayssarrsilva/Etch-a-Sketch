@@ -7,6 +7,7 @@ function createSquare(size = 16){
         let rows = document.createElement("div");
         container.appendChild(rows);
         rows.setAttribute("style", `flex-grow: 0; box-sizing: border-box; flex-basis: calc(100% / ${size}); border: 1px solid black; aspect-ratio: 1 / 1;`);
+        hoverSquare(rows);
     }
 }
 
@@ -21,6 +22,12 @@ function callButton(){
             createSquare(Number(promp));
         }
     });
+}
+
+function hoverSquare(rows){
+    rows.addEventListener("mouseenter", () => {
+        rows.style.backgroundColor = 'blue';
+    })
 }
 
 createSquare();
