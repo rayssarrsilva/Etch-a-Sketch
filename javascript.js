@@ -25,4 +25,5 @@ generateSquare();
 
 function sizeNumber(){
     let promp = prompt("Type the number of squares per side for the new grid (Y x Y): ");
+    return promp;
 }
