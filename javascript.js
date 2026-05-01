@@ -16,10 +16,11 @@ const ChangeSize = document.querySelector(".popup");
 function callButton(){
     ChangeSize.addEventListener("click", function() {
         let promp = prompt("Type the number of squares per side for the new grid (Y x Y): "); 
-        
-        if (promp) {
+        if (promp <= 100 && promp) {
             container.textContent = "";
             createSquare(Number(promp));
+        } else {
+            alert("Insert a value under 100");
         }
     });
 }
